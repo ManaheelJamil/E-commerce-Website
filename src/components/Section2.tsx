@@ -4,7 +4,7 @@ import React from 'react'
 const Section2 = () => {
     return (
         <div>
-            <div className='grid grid-cols-2 px-20 mt-96 bg-[#fbfcff]'>
+            <div className='grid grid-cols-2 px-20 mt-60 bg-[#fbfcff]'>
                 <div className='relative mt-32'>
                     <div className='font-[800] text-[5.87rem] h-32 absolute text-[#212121] opacity-[0.07] z-10'>
                         <h1>Different from others</h1>

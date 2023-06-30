@@ -8,7 +8,7 @@ const section3 = () => {
                 <h1 className='font-bold text-3xl'>Subscribe Our Newsletter</h1>
                 <p className='text-gray-500 text-sm mt-5'>Get the latest information and promo offers directly</p>
             <div className='mt-8'>
-                <input type='text ' placeholder='inut email address' className='border px-5 py-2 w-64 text-xs border-gray-500'/>
+                <input type='text ' placeholder='input email address' className='border px-5 py-2 w-64 text-xs border-gray-500'/>
                 <button className='bg-black text-white px-4 py-2 mt-1 ml-3 text-sm'>Get Started</button>
             </div>
             </div>
