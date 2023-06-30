@@ -30,9 +30,9 @@ export default async function Home() {
                 <h1 className='text-4xl font-bold text-center'>Check What We Have
                 </h1>
             </div>
-            <div className='grid grid-cols-3 max-w-[900px] mx-auto mt-10 '>
+            <div className='grid mobile:grid-cols-1  tablet:grid-cols-3 max-w-[900px] mx-auto mt-10 '>
                 {data.map((x: any) => (
-                    <div className=' hover:scale-125 duration-1000'>
+                    <div className=' hover:scale-125 duration-1000 mt-5 mobile:ml-3 tablet:ml-0'>
                         <img src={urlForImage(x.image).url()} alt='logo' className=' h-80 bg-cover ' />
                         <h1 className='font-semibold text-lg py-3'>{x.description}</h1>
                         <h1 className='text-xl font-bold'>${x.price}</h1>

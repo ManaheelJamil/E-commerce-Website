@@ -4,7 +4,10 @@ import { RiDeleteBin7Line } from "react-icons/ri"
 const page = () => {
     return (
         <>
-            <div className='w-[900px] mx-auto flex mt-10'>
+            <div className='tablet:w-[900px]  small:w-[700px] mx-auto tablet:flex small:flex mt-10'>
+            <div>
+<img src='emoji.jpg' className='w-[600px]'/>
+                </div>
                 <div className='mt-32'>
                     <h1 className='text-3xl text-gray-600 font-bold'>
                         Payment Successfull
@@ -26,13 +29,10 @@ const page = () => {
                     </div>
                    <div className='mt-10'>
                     <button className='bg-green-800 font-semibold rounded-lg w-40 h-10 text-white'>New Site</button>
-                    <button className='border-green-800 ml-5 font-semibold border-2 rounded-lg w-40 h-10 text-green-800'> Back Home</button>
+                    <button className='border-green-800 tablet:ml-5 font-semibold border-2 rounded-lg w-40 h-10 text-green-800'> Back Home</button>
                     </div>
                 </div>
 
-                <div>
-<img src='emoji.jpg' className='w-[600px]'/>
-                </div>
             </div>
         </>
     )

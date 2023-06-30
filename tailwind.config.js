@@ -7,13 +7,15 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'tablet': '992px',
+      'mobile': '320px',
+
+      'tablet': '996px',
       // => @media (min-width: 640px) { ... }
 
       'laptop': '1024px',
       // => @media (min-width: 1024px) { ... }
 
-      'desktop': '1280px',
+      'small': '600px',
       // => @media (min-width: 1280px) { ... }
     },
     extend: {

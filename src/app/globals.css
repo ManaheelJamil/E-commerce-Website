@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 @layer components {
-  @media screen and (max-width:980px) {
-   .paymentFail{
-    display: block;
-    /* grid-template-columns:  auto; */
-   }
-    
+  @media screen and (max-width:908px) {
+    .dropdown-menu.open {
+      height: 270px;
+      width:100%;
+      margin: 0 auto;
+      left: 0px;
+  box-shadow: 10px 10px 10px 10px gray;
+   display: block; 
   }
+  }
+    
 }

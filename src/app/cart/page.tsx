@@ -55,7 +55,7 @@ const cart = () => {
           </div>
           <button className='bg-black text-white w-[240px] text-center py-2 font-semibold mt-5'> Process to Checkout</button>
         </div>
-      </div>
+      </div> 
     </>
   )
 }
