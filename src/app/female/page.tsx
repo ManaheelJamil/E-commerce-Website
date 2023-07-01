@@ -32,7 +32,12 @@ export default async function Home() {
   const data: IProduct = await getProduct()
   console.log(data)
   return (
-    <div className='grid grid-cols-[auto,auto,auto,auto]    justify-center gap-10 mt-10'>
+    <>
+     <div className='tablet:flex small:flex w-[90vw] mx-auto justify-around bg-gray-50 py-10 mt-10'>
+      <img src='female.jpg' className='tablet:w-[500px] small:w-[400px]'/>
+      <h1 className='text-6xl mt-32 text-gray-600 underline font-semibold'>Female Collection</h1>
+    </div>
+    <div className='grid tablet:grid-cols-[auto,auto,auto,auto] small:grid-cols-[auto,auto,auto]   justify-center gap-10 mt-48'>
       {data.map((item: any) => (
         <div>
           <ProductCard item={item} />
@@ -41,5 +46,6 @@ export default async function Home() {
       ))}
 
     </div>
+  </>
   )
 }

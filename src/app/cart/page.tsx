@@ -15,10 +15,10 @@ const cart = () => {
 
   return (
     <>
-      <div className='flex justify-between  w-[1000px] mx-auto mt-20'>
+      <div className='tablet:flex justify-between  w-[1000px] mx-auto mt-20'>
         <div>
           <h1 className='text-3xl text-black font-bold'>Shopping Cart</h1>
-          <div className=' flex hover:shadow-lg  gap-5 mt-5 '>
+          <div className=' flex hover:shadow-lg tablet:w-[800px] mobile:w-[600px] gap-5 mt-5 '>
             <div>
               <img className='w-[200px]' src="https://cdn.sanity.io/images/dow10h3v/production/a6a38f6a1f31dafe5f3294a4384f865b7d25a344-370x394.png" />
             </div>
@@ -42,7 +42,7 @@ const cart = () => {
             </div>
           </div>
         </div>
-        <div className=''>
+        <div className=' mobile:w-[230px]'>
           <h1 className='text-2xl font-bold'>Order Summary</h1>
 
           <div className='flex justify-between mt-5' >

@@ -22,7 +22,7 @@ const Navbar = () => {
                     <div className='link space-x-3  tablet:block hidden '>
                         <Link href="/female">Female</Link>
                         <Link href="/male">Male</Link>
-                        <Link href="#">Kids</Link>
+                        <Link href="/kids">Kids</Link>
                         <Link href="#">All Products</Link>
                     </div>
                     <div className='ml-44 border tablet:block hidden tablet:ml-44  border-gray-400 rounded-md w-80 flex p-1'>  <input type='text' className='pl-1 text-xs' placeholder='What you looking for?' /></div>

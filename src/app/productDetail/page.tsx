@@ -3,7 +3,9 @@ import React from 'react'
 import { useState } from 'react';
 const page = () => {
   const [count, setCount] = useState(1);
-
+  const xs = () =>{
+    alert("XS SIZE IS SELECTED")
+  }
   const increment = () => {
     setCount(count + 1);
   };
@@ -25,11 +27,11 @@ const page = () => {
           <p className='text-gray-400 text-xl'>Sweater</p>
           <h2 className='text-sm tablet:pt-5 font-bold'>SELECT SIZE</h2>
           <div className='flex justify-around w-56 tablet:py-4'>
-            <div className='font-bold text-gray-600 w-8 h-8 text-xs rounded-full text-center cursor-pointer pt-2 hover:scale-125 duration-1000 hover:shadow-lg bg-white'>XS</div>
-            <div className='font-bold text-gray-600 w-7 h-7 text-xs rounded-full text-center cursor-pointer pt-2 hover:scale-125 duration-1000 hover:shadow-lg bg-white'>S</div>
-            <div className='font-bold text-gray-600 w-7 h-7 text-xs rounded-full text-center cursor-pointer pt-2 hover:scale-125 duration-1000 hover:shadow-lg bg-white'>M</div>
-            <div className='font-bold text-gray-600 w-7 h-7 text-xs rounded-full text-center cursor-pointer pt-2 hover:scale-125 duration-1000 hover:shadow-lg bg-white'>L</div>
-            <div className='font-bold text-gray-600 w-7 h-7 text-xs rounded-full text-center cursor-pointer pt-2 hover:scale-125 duration-1000 hover:shadow-lg bg-white'>XL</div>
+            <div className='font-bold text-gray-600 w-8 h-8 text-xs rounded-full text-center cursor-pointer pt-2 hover:scale-125 duration-1000 hover:shadow-lg bg-white ' onClick={xs}>XS</div>
+            <div className='font-bold text-gray-600 w-7 h-7 text-xs rounded-full text-center cursor-pointer pt-2 hover:scale-125 duration-1000 hover:shadow-lg bg-white onClick={s()}'>S</div>
+            <div className='font-bold text-gray-600 w-7 h-7 text-xs rounded-full text-center cursor-pointer pt-2 hover:scale-125 duration-1000 hover:shadow-lg bg-white onClick={m()}'>M</div>
+            <div className='font-bold text-gray-600 w-7 h-7 text-xs rounded-full text-center cursor-pointer pt-2 hover:scale-125 duration-1000 hover:shadow-lg bg-white onClick={l()}'>L</div>
+            <div className='font-bold text-gray-600 w-7 h-7 text-xs rounded-full text-center cursor-pointer pt-2 hover:scale-125 duration-1000 hover:shadow-lg bg-white onClick={xl()}'>XL</div>
           </div>
           <div className='flex'>
             <h1 className='font-bold mt-4 '>Quantity:</h1>
